@@ -1,1 +1,85 @@
-Hi
+ / the root directory.
+
+/bin, is where you'll find binary files or executable files.Programs are written in source code, and this is human readable text.
+      These text files are then compiled into machine readable binaries.They are called binaries because machine code is a string of zeros and ones.
+      Just know that applications that you can run are sometimes located in /bin.
+
+/etc or etc is where you'll find configuration files.Configuration files control how the operating system or applications behave.
+     For example, there's a configuration file in /etc that tells the operating system whether to boot into a text mode or a graphical mode.
+
+/home is where user home directories live.So for example, my home directory would be /home/jason.Linux systems can and often do have
+       multiple users or multiple user accounts.And the home directory is where you can separate your data from another account's data.
+       You can store anything you want to in your home directory.You could store documents, or music files, or your vacation pictures.
+
+/opt is where optional or third party software lives./opt is for software that is not bundled with the operating system. 
+     For example, Google Earth is not part of the standard Linux operating system.
+     
+     So Google Earth gets installed in /opt.
+
+/tmp is call temp and it's for temporary space.And most Linux distributions clear /tmp at boot time.
+     So if you put some files in /tmp and the Linux server gets rebooted or your Linux desktop gets rebooted, your files will be gone.
+     Now /tmp is a great place to store temporary files, but do not put anything in /tmp that you want to keep long term.
+
+/usr is called user, and this is where user related programs live.
+
+
+/var also called var, is for variable data.Think of things that change often.Things that change often on a Linux system are typically log files that are generated
+    either by the operating system itself or applications. In Linux we typically talk about directories. 
+
+
+Shell : program that handles the command we give on terminal. so it is called shell propmts.
+
+
+commands: 
+man : for manual of any command like 'man ls'
+      g -- go to top
+      G -- go to bottom
+      Enter--next line
+      spacebar -- go to next page
+      q-- quit man
+echo : displays contents  for example echo $Path
+
+cat : displays file content
+
+tac : displays file content in reverse order
+
+gzip --help : gives help about the command gzip
+
+ls --help  : gives help about the command ls
+
+man -k 'search term'
+
+which : gives the path of the command 
+      example: which ls
+      result:  /usr/bin/ls
+Commands to navigate between directory:  
+1. cd 
+2. cd .  :  show current directory
+3. cd ..  : parent directory
+4. cd -   : goes to previous directory
+5. echo $OLDPWD : shows old directory name
+
+Commands to create direcotry
+
+1. mkdir dir1    : create directroy dir1
+2. mkdir -p dir2/dir3 : creates parent directory dir2 and then creates dir3
+3. rmdir dir1     : removes dir1 as there is no any directory inside dir1
+4. rm -rf dir2    : recursively deletes dir3 which is inside dir2 and then deletes dir2
+
+Listing of Files :
+1. ls  : lists files and directory
+2. ls -a : list all files and directory including hidden one
+3. ls -l : list all files and directory with details 
+4. ls - a -l or ls -la  : list all files and directory including hidden one in detail mode
+5. ls -F   : give details about the files @-- for link /-- for directory *-- for executables
+6. ls -t  : sorted by time
+7. ls -r  : sorted in reverse order
+8. ls -lart : long listing all files in reverse order sorted by time
+9. ls -R : list directory and subdirectory in recursive manner
+10. tree -d : list directories only
+11. tree -c : list files and diectory in color
+12. ls -F : classify the directory for link/dierctory/executables
+13. ls --color : shows directory and files in diff color
+14. ls --Fcolor: color with classification 
+15. tree -cd  : alternate of ls -Fcolor
+
